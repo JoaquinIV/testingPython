@@ -24,9 +24,9 @@ class Mis_test(unittest.TestCase):
     def test_estadoPendientePago(self):
         self.assertTrue(Pago("ASDF123456", 1234, 5000.22, "Pendiente").esEstadoPendiente())
 
-    # #SARA
+    # #SARA este esta mal
     def test_titularAlfabetico(self):
-        self.assertTrue(TransaccionPago("Victor Nomberto", 1234, "En espera").esNombreAlfabetico())
+        self.assertFalse(TransaccionPago("Victor Nomberto", 1234, "En espera").esNombreAlfabetico())
 
     def test_CodigoCuatroTarjetaTransaccion(self):
         self.assertTrue(TransaccionPago("Pedro Fernandez", 1234, "En espera").cuatroDigitosTarjetaTransaccion())
