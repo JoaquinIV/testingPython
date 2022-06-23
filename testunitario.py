@@ -5,7 +5,7 @@ import unittest
 
 class Mis_test(unittest.TestCase):
 
-    #NACHO
+    #NACHO_o
     def test_titularTarjetaString(self):
         self.assertTrue(TransaccionPago("Pedro Fernandez", 1234, "En espera").esNombreTitularString())
 
