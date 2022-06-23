@@ -26,7 +26,7 @@ class Mis_test(unittest.TestCase):
 
     #SARA 
     def test_titularAlfabetico(self):
-        self.assertTrue(TransaccionPago("Victor Nomberto", 1234, "En espera").esNombreAlfabetico())
+        self.assertFalse(TransaccionPago("Victor Nomberto", 1234, "En espera").esNombreAlfabetico())
 
     def test_CodigoCuatroTarjetaTransaccion(self):
         self.assertTrue(TransaccionPago("Pedro Fernandez", 1234, "En espera").cuatroDigitosTarjetaTransaccion())
