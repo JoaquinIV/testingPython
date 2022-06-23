@@ -24,9 +24,9 @@ class Mis_test(unittest.TestCase):
     def test_estadoPendientePago(self):
         self.assertTrue(Pago("ASDF123456", 1234, 5000.22, "Pendiente").esEstadoPendiente())
 
-    # #SARA este esta mal
+    #SARA 
     def test_titularAlfabetico(self):
-        self.assertFalse(TransaccionPago("Victor Nomberto", 1234, "En espera").esNombreAlfabetico())
+        self.assertTrue(TransaccionPago("Victor Nomberto", 1234, "En espera").esNombreAlfabetico())
 
     def test_CodigoCuatroTarjetaTransaccion(self):
         self.assertTrue(TransaccionPago("Pedro Fernandez", 1234, "En espera").cuatroDigitosTarjetaTransaccion())
@@ -38,7 +38,7 @@ class Mis_test(unittest.TestCase):
     def test_CodigoPagoTieneOchoDigitos(self):
         self.assertFalse(Pago("ASDF123456", 1234, 5000.22, "Pendiente").tieneOchoDigitosCodigoPago())
 
-    #JULI MI VIDA <3
+    #JULI
     def test_NumeroTarjetaTransaccionEntero(self):
         self.assertTrue(TransaccionPago("Pedro Fernandez", 1234, "En espera").numeroTransaccionInt())
 
